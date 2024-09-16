@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background-image">
+        <div class="container">
+            <h1>Lista de Tarefas</h1>
+            <div class="input-container">
+                <input type="text" id="taskInput" placeholder="Adicionar nova tarefa...">
+                <select id="prioritySelect">
+                    <option value="normal">Prioridade</option>
+                    <option value="urgent">Urgente</option>
+                    <option value="notUrgent">Não Urgente</option>
+                </select>
+                <input type="text" id="taskTime" placeholder="Horário de ínicio" maxlength="5">
+                <button id="addTaskBtn">Adicionar</button>
+            </div>
+            <ul id="taskList"></ul>
+            <div class="completed-tasks">
+                <h2>Tarefas Concluídas</h2>
+                <ul id="completedList"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
